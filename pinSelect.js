@@ -9,13 +9,13 @@ angular
           updateFn: '&',
           numbers:"@"
 	    },
-    	template: '<div><label>PIN </label><span id = "inputBoxesConatiner"><input type="password" id="number1" class="number" maxlength="1" size="1" ng-model="pin1" ng-change="dateChanged()" /> -<input type="password" ng-model="pin2" id="number2" class="number" maxlength="1" size="1" ng-change="dateChanged()" /> -<input type="password" id="number3" ng-model="pin3" class="number" maxlength="1" size="1" ng-change="dateChanged()"/> -<input type="password" ng-model="pin4" id="number3" class="number" maxlength="1" size="1" ng-change="dateChanged()" /></span></div>',
+    	template: '<div><label>PIN </label><span id = "inputBoxesConatiner"><input type="password" id="number1" class="number" maxlength="1" size="1" ng-model="pin1" ng-change="dateChanged()" /> -<input type="password" ng-model="pin2" id="number2" class="number" maxlength="1" size="1" ng-change="dateChanged()" /> -<input type="password" id="number3" ng-model="pin3" class="number" maxlength="1" size="1" ng-change="dateChanged()"/> -<input type="password" ng-model="pin4" id="number3" class="number input-last" maxlength="1" size="1" ng-change="dateChanged()" /></span></div>',
     	link: function ($scope) {
         /*Jquery is required for this directive to work*/
-           for(var i=0;i<$scope.numbers;i++){
+          /* for(var i=0;i<$scope.numbers;i++){
                 $('#inputBoxesConatiner').append('<input type="password" class="number" ng-model="pin2[$index]" ng-class="{active:true }" maxlength="1" size="1"/>');
                 $scope.$apply();
-            }
+            }*/
             
           (function ($) {
     var platform = navigator.platform,
